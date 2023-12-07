@@ -7,20 +7,19 @@ body {
     height: auto;
     display: flex;
     flex-direction: column;
-    padding: 30px 128px;
-}
-* {
+    margin: 30px 128px 30px 128px;
     background-color: #191d2b;
-    margin: 0px;
-    padding: 0px;
 }
 
 .header {
     display: flex;
-    justify-content: space-between;
-    flex: 1;
+    justify-content: space-around;
     gap: 16px;
+    align-items: center;
+    
+    
 }
+
 
 .logo {
     text-align: center;
@@ -29,6 +28,9 @@ body {
     align-items: center;
     display: flex;
     gap: 5px;
+    flex: 1;
+    width: fit-content;
+    justify-self: flex-start;
 }
 .logo .logo-text {
     color: aliceblue;
@@ -39,9 +41,9 @@ body {
 
 .links{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 24px;
+    gap: 12px;
     text-align: center;
 }
 .links .item {
@@ -70,6 +72,12 @@ body {
     flex-direction: row;
     margin: 60px 0px;
     justify-content: space-between;
+    align-items: start;
+    padding: 10px;
+    gap: 12px;
+}
+.hero .hero-text {
+    max-width: 50%;
 }
 
 .hero .hero-text .heading {
@@ -78,13 +86,37 @@ body {
     min-width: 280px;
     color: aliceblue;
 }
+.hero .hero-text p {
+    position: relative;
+    font-size: 24px;
+    color: aliceblue;
+    padding: 12px;
+    border-radius: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+.hero .hero-text p::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    background: linear-gradient(to top, aliceblue, #ef4d4d);
+    z-index: -1;
+}
+
+.hero .hero-text p strong {
+    color: #ef4d4d;
+}
+
 
 .hero .hero-text .heading span {
+    font-size: 48px;
     position: relative;
 }
 
 .hero .hero-text .heading span::before {
-    content: "Innovation";
+    content: "Welcome!";
     color: #ef4d4d;
     animation: words 20s infinite;
 }
@@ -100,6 +132,17 @@ body {
     animation: cursor .8s infinite, typing 20s steps(14) infinite;
 }
 
+@media screen and (max-width: 1200px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-image img {
+        display: none;
+    }
+}
+
 @keyframes cursor {
     to {
         border-left: 2px solid #ef4d4d00;
@@ -108,19 +151,19 @@ body {
 
 @keyframes words {
     0%,20% {
-        content: "Innovation.";
+        content: "Welcome!";
     }
     21%,40% {
-        content: "Creativity.";
+        content: "¡Bienvenido!";
     }
     41%,60% {
-        content: "Expression.";
+        content: "Bienvenue!";
     }
     61%,80% {
-        content: "Connectivity.";
+        content: "Willkommen!";
     }
     81%,100% {
-        content: "Inspiration.";
+        content: "Bem-vindo!";
     }
 }
 
