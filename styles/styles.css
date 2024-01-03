@@ -60,11 +60,12 @@ body {
     border-radius: 5px;
     text-decoration: none;
 }
-.links .item::after {
+#section-shortcut::after {
     content: "/";
     padding: 5px;
     align-items: center;
   }
+  
 .links .item:hover {
     text-align: center;
     color: var(--accent-color);
