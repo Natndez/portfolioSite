@@ -4,7 +4,7 @@ Learning Web Development has been an integral part of my current position as a W
 
 #### Page Contents
 - Biography Section
-- Notable Projects
+- Favorite Projects
 - Contact Information
 - Link to my Resume
 
@@ -13,3 +13,10 @@ Learning Web Development has been an integral part of my current position as a W
 - Background Highlight (#292f47)
 - Accent Color (#ef4d4d)
 - Text Color (#e8e6e6d8)
+- Font Family (Kanit, sans-serif)
+
+#### Icon Classes Used
+- HTML Icon: "fa-solid fa-code"
+- GitHub Icon: "fa-brands fa-square-github"
+- LinkedIn Icon:"fa-brands fa-linkedin"
+- Mail Icon: "fa-solid fa-envelope"
