@@ -5,6 +5,7 @@ Learning Web Development has been an integral part of my current position as a W
 #### Page Contents
 - Biography Section
 - Favorite Projects
+- Certifications Completed
 - Contact Information
 - Link to my Resume
 
