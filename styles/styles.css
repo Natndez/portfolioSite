@@ -104,7 +104,6 @@ body {
     flex-direction: row;
     justify-content: center;
     gap: 16px;
-    width: 50%;
 }
 
 .media-links .link {
@@ -232,7 +231,7 @@ body {
 
 .section-header {
     font-size: 36px;
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Kanit', Helvetica, sans-serif;
     color: var(--text-color);
 }
 
@@ -265,12 +264,12 @@ body {
     color: var(--text-color);
     text-align: center;
     border-bottom: 2px solid var(--background-highlight);
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Kanit', Helvetica, sans-serif;
 }
 
 .sub-heading2 {
     color: var(--accent-color);
     text-align: center;
     border-bottom: 2px solid var(--background-highlight);
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Kanit', Helvetica, sans-serif;
 }
