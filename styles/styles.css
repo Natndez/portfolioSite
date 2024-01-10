@@ -258,12 +258,18 @@ body {
     background-color: var(--background-highlight);
 }
 
+.bio-sections .bio-content p {
+    color: var(--text-color);
+    font-size: 18px;
+    font-family: 'Kanit', Helvetica, sans-serif;
+}
+
 .rotater {
     transition: transform 0.3s ease;
 }
 
 .rotater:hover {
-    transform: scale(1.1) rotate(3deg);
+    transform: scale(1.2) rotate(2deg);
 }
 
 .rotatel {
@@ -271,7 +277,7 @@ body {
 }
 
 .rotatel:hover {
-    transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.2) rotate(-2deg);
 }
 
 .sub-heading1 {
