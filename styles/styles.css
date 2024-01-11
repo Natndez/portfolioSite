@@ -23,9 +23,11 @@ body {
 }
 .header {
     display: flex;
-    justify-content: space-around;
-    gap: 16px;
-    align-items: center;   
+    justify-content: space-between;
+    /* gap: 16px; */
+    align-items: center; 
+    margin-bottom: 5px; 
+    flex: 1;
 }
 .logo {
     text-align: center;
@@ -46,10 +48,11 @@ body {
 }
 .links{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     text-align: center;
+    flex: 1;
 }
 .links .item {
     padding: 12px 6px;
@@ -82,7 +85,7 @@ body {
     padding: 40px;
     gap: 12px;
     border-radius: 20px;
-
+    flex: 1;
     /* Background Styles */
     background-image: url(../images/background.png);
     background-size: cover;
@@ -92,6 +95,7 @@ body {
 .hero .hero-text {
     max-width: 50%;
     background-color: var(--background-color);
+    border: 3px solid var(--background-highlight);
     padding: 16px;
     border-radius: 20px;
 }
@@ -110,11 +114,13 @@ body {
     background-color: #191d2b;
     font-size: 42px;
     color: var(--text-color);
+    border: 3px solid var(--background-color);
     border-radius: 68px;
     transition: transform 0.3s ease;
 }
 .media-links .link:hover {
     transform: scale(1.2);
+    border: 3px solid var(--background-highlight);
 }
 .media-links .link a {
     color: inherit;
@@ -146,6 +152,7 @@ body {
     bottom: 0;
     width: 6px;
     background: linear-gradient(to top, var(--text-color), var(--accent-color));
+    border-radius: 3px;
     z-index: -0.5;
 }
 .hero .hero-text p strong {
@@ -170,16 +177,7 @@ body {
     right: -8px;
     animation: cursor .8s infinite, typing 20s steps(14) infinite;
 }
-@media screen and (max-width: 1200px) {
-    .hero {
-        flex-direction: column;
-        align-items: start;
-        justify-content: center;
-    }
-    .hero-image img {
-        display: none;
-    }
-}
+
 @keyframes cursor {
     to {
         border-left: 2px solid var(--background-color);
@@ -210,11 +208,7 @@ body {
         width: calc(100% + 8px);
     }
 }
-.hero-image img {
-    width: 450px;
-    height: auto;
-    border-radius: 20px;
-}
+
 .section-header {
     font-size: 36px;
     font-family: 'Kanit', Helvetica, sans-serif;
