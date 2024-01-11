@@ -1,8 +1,12 @@
 :root {
-    --background-color: #191d2b;
-    --background-highlight: #292f47;
-    --text-color: #e8e6e6d8;
-    --accent-color: #ef4d4d;
+    /* --background-color: #191d2b; */
+    --background-color: rgb(25, 29, 43);
+    /* --background-highlight: #292f47; */
+    --background-highlight: rgb(41, 47, 71);
+    /* --text-color: #e8e6e6d8; */
+    --text-color: rgba(232, 230, 216, 0.875);
+    /* --accent-color: #ef4d4d; */
+    --accent-color: rgb(239, 77, 77);
 }
 html {
     scroll-behavior: smooth;
