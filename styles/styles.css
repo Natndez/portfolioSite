@@ -3,6 +3,7 @@
     --background-color: rgb(25, 29, 43);
     /* --background-highlight: #292f47; */
     --background-highlight: rgb(41, 47, 71);
+    --background-highlight2: rgb(41, 47, 71, .5);
     /* --text-color: #e8e6e6d8; */
     --text-color: rgba(232, 230, 216, 0.875);
     /* --accent-color: #ef4d4d; */
@@ -47,14 +48,15 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     text-align: center;
 }
 .links .item {
-    padding: 12px;
+    padding: 12px 6px;
     color: var(--text-color);
     font-size: 20px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
+    /* border-bottom: 2px solid var(--background-highlight); */
     text-decoration: none;
 }
 #section-shortcut::after {
@@ -67,7 +69,8 @@ body {
     color: var(--accent-color);
     cursor: pointer;
     font-size: 20px;
-    background-color: var(--background-highlight);
+    border-bottom: 2px solid var(--accent-color);
+    /* background-color: var(--background-highlight2); */
 }
 .hero {
     width: inherit;
