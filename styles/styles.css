@@ -7,7 +7,7 @@
     /* --text-color: #e8e6e6d8; */
     --text-color: rgba(232, 230, 216, 0.875);
     /* --accent-color: #ef4d4d; */
-    --accent-color: rgb(239, 77, 77);
+    --accent-color: rgb(240, 80, 77);
 }
 html {
     scroll-behavior: smooth;
