@@ -214,14 +214,14 @@ body {
     font-family: 'Kanit', Helvetica, sans-serif;
     color: var(--text-color);
 }
-.bio-container {
+.info-container {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: nowrap; /* Create a media query to adjust this on smaller screens */
     gap: 16px;
 }
-.bio-sections {
+.info-sections {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -231,10 +231,10 @@ body {
     flex: 1;
     
 }
-.bio-sections:hover {
+.info-sections:hover {
     background-color: var(--background-highlight);
 }
-.bio-sections .bio-content p {
+.info-sections .info-content p {
     color: var(--text-color);
     font-size: 18px;
     font-family: 'Kanit', Helvetica, sans-serif;
