@@ -15,10 +15,16 @@ function showModal(modalId) {
     overlay.style.display = 'block';
 }
 
-function hideOverlay() {
+function hideModal() {
+    // Getting the modal
+    var modal = document.querySelector('.project-modal');
+    
     // Get overlay element
     var overlay = document.getElementById('overlay');
 
-    // Set overlay display to block (Shows the overlay)
+    // Set modal display to none (Hides modal)
+    modal.style.display = 'none';
+    
+    // Set overlay display to none (Hides the overlay)
     overlay.style.display = 'none';
 }

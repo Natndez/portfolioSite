@@ -249,7 +249,7 @@ body {
 .info-sections:hover {
     background-color: var(--background-highlight);
 }
-p {
+.body-text {
     color: var(--text-color);
     font-size: 18px;
     font-family: 'Kanit', Helvetica, sans-serif;
