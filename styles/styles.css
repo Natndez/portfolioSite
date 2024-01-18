@@ -229,12 +229,15 @@ body {
     border: 4px solid var(--background-highlight);
     border-radius: 16px;
     flex: 1;
+
+    /* Width Properties */
+    max-width: 25%;
     
 }
 .info-sections:hover {
     background-color: var(--background-highlight);
 }
-.info-sections .info-content p {
+.info-sections  p {
     color: var(--text-color);
     font-size: 18px;
     font-family: 'Kanit', Helvetica, sans-serif;
