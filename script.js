@@ -1,5 +1,7 @@
 // Main functions used in site
 
+
+
 // Basic function to show overlay
 function showModal(modalId) {
     // Get modal element
@@ -28,3 +30,12 @@ function hideModal() {
     // Set overlay display to none (Hides the overlay)
     overlay.style.display = 'none';
 }
+// Code to use escape key to close modal
+document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') { // If the key pressed is the escape key
+            hideModal();
+        }
+    });
+});
+
