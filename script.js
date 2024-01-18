@@ -19,13 +19,15 @@ function showModal(modalId) {
 
 function hideModal() {
     // Getting the modal
-    var modal = document.querySelector('.project-modal');
+    var modals = document.querySelectorAll('.project-modal');
     
     // Get overlay element
     var overlay = document.getElementById('overlay');
 
-    // Set modal display to none (Hides modal)
-    modal.style.display = 'none';
+    // Set all modal displays to none (Hides modal)
+    modals.forEach(function(modal) {
+        modal.style.display = 'none';
+    });
     
     // Set overlay display to none (Hides the overlay)
     overlay.style.display = 'none';

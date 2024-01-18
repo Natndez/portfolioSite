@@ -280,6 +280,10 @@ body {
     font-family: 'Kanit', Helvetica, sans-serif;
 }
 
+.project-cards {
+    cursor: pointer;
+}
+
 .project-modal {
     /* Modal Positioning attributes */
     display: none;
@@ -304,7 +308,7 @@ body {
     height: auto;
     position: absolute;
     top: 15px;
-    right: 20px;
+    right: 15px;
     border-radius: 5px;
     color: var(--text-color);
     font-family:'Kanit', Helvetica, sans-serif;;
@@ -313,4 +317,5 @@ body {
 .close-button:hover {
     background-color: var(--background-highlight);
     color: var(--accent-color);
+    cursor: pointer;
 }
