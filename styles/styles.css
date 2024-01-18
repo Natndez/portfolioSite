@@ -249,7 +249,7 @@ body {
 .info-sections:hover {
     background-color: var(--background-highlight);
 }
-.info-sections  p {
+p {
     color: var(--text-color);
     font-size: 18px;
     font-family: 'Kanit', Helvetica, sans-serif;
@@ -278,4 +278,22 @@ body {
     text-align: center;
     border-bottom: 2px solid var(--background-highlight);
     font-family: 'Kanit', Helvetica, sans-serif;
+}
+
+.project-modal {
+    /* Modal Positioning attributes */
+    display: none;
+    flex-direction: column;
+    z-index: 2;
+    position: fixed; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%); /* Shift the modal up and left by half its own width and height */
+    
+    /* Modal styles */
+    background-color: var(--background-color);
+    padding: 50px;
+    border-radius: 12px;
+    border: 2px solid var(--background-highlight);
+
 }
