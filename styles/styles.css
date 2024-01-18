@@ -21,6 +21,18 @@ body {
     background-color: var(--background-color);
     cursor: default;
 }
+#overlay {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 1; /* Ensure it's below the modal but above other items */
+}
 .header {
     display: flex;
     justify-content: space-between;
