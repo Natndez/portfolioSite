@@ -13,6 +13,10 @@ function showModal(modalId) {
     // Set modal display to flex
     modal.style.display = 'flex';
 
+    // Disabling scrolling on the body
+    document.body.style.overflow = 'hidden';
+    
+
     // Set overlay display to block (Shows the overlay)
     overlay.style.display = 'block';
 }
@@ -29,6 +33,9 @@ function hideModal() {
         modal.style.display = 'none';
     });
     
+    // Reenable scrolling on the body
+    document.body.style.overflow = '';
+
     // Set overlay display to none (Hides the overlay)
     overlay.style.display = 'none';
 }
