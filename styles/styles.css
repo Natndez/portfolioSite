@@ -293,13 +293,33 @@ body {
     left: 50%; 
     top: 50%; 
     transform: translate(-50%, -50%); /* Shift the modal up and left by half its own width and height */
-    
+    max-height: 80vh;
+    width: 60%;
+    overflow-y: auto;
+
     /* Modal styles */
     background-color: var(--background-color);
     padding: 50px;
     border-radius: 12px;
-    border: 5px solid var(--background-highlight);
+    border: 3px solid var(--background-highlight);
 }
+
+/* Style the scrollbar in WebKit browsers */
+.project-modal::-webkit-scrollbar {
+    width: 5px;
+    margin: 10px;
+}
+
+.project-modal::-webkit-scrollbar-track {
+    background: var(--background-color);
+}
+
+.project-modal::-webkit-scrollbar-thumb {
+    background: var(--background-highlight);
+    border-radius: 10px;
+}
+
+
 
 .close-button {
     background: none;
@@ -311,11 +331,30 @@ body {
     right: 15px;
     border-radius: 5px;
     color: var(--text-color);
-    font-family:'Kanit', Helvetica, sans-serif;;
+    font-size: 16px;
+    font-family:'Kanit', Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .close-button:hover {
     background-color: var(--background-highlight);
     color: var(--accent-color);
     cursor: pointer;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 26px;
+    flex-wrap: wrap;
+}
+
+.grid-item {
+    flex-basis: 250px;
+    height: auto;
+    border: 2px solid var(--background-highlight);
+    border-radius: 5px;
+    text-align: center;
+
 }
