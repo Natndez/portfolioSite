@@ -27,3 +27,4 @@ Learning Web Development has been an integral part of my current position as a W
 - LinkedIn Icon:"fa-brands fa-linkedin"
 - Mail Icon: "fa-solid fa-envelope"
 - File Icon: "fa-regular fa-file-lines"
+- YouTube Icon: "fa-brands fa-youtube"
