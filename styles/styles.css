@@ -286,6 +286,7 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     border-bottom: 2px solid var(--background-highlight);
     font-family: 'Kanit', Helvetica, sans-serif;
+    margin-top: 15px;
 }
 
 .project-cards {
@@ -315,16 +316,16 @@ body::-webkit-scrollbar-thumb {
 /* Style the scrollbar in WebKit browsers */
 .project-modal::-webkit-scrollbar {
     width: 5px;
-    margin: 10px;
+    border-radius: 20px;
 }
 
 .project-modal::-webkit-scrollbar-track {
-    background: var(--background-color);
+    background: none;
 }
 
 .project-modal::-webkit-scrollbar-thumb {
-    background: var(--background-highlight);
-    border-radius: 10px;
+    background: var(--background-highlight2);
+    border-radius: 20px;
 }
 
 .close-button {
@@ -351,16 +352,42 @@ body::-webkit-scrollbar-thumb {
 .grid-container {
     display: flex;
     flex-direction: row;
+    align-items: top;
     justify-content: space-between;
-    gap: 26px;
     flex-wrap: wrap;
 }
-
 .grid-item {
-    flex-basis: 250px;
+    width: calc(33.333% - 50px);
     height: auto;
     border: 2px solid var(--background-highlight);
-    border-radius: 5px;
-    text-align: center;
-
+    border-radius: 15px;
+    text-align: left;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+.project-img {
+    max-width: 250px;
+    max-height: auto;
+    border-radius: 15px;
+}
+.project-desc {
+    flex-basis: 100%;
+}
+.project-title {
+    font-family:'Kanit', Helvetica, sans-serif;
+    color: var(--accent-color);
+}
+.list-desc {
+    color: var(--text-color);
+    font-size: 18px;
+    font-family:'Kanit', Helvetica, sans-serif;
+    list-style-type: square;
+    margin: 0px;
+    padding: 0px 0px 0px 25px;
+}
+.list-items {
+    margin: 10px;
 }
