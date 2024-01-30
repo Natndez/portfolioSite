@@ -426,3 +426,28 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     gap: 8px;
 }
+
+.tech-content {
+    background-color: var(--background-color);
+    width: 50%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.tech-items-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tech-item {
+    font-family: 'Kanit', Helvetica, sans-serif;
+    color: var(--text-color);
+    padding: 3px 15px;
+    box-shadow: 1px 2px 3px var(--background-highlight2);
+    border-radius: 20px;
+}
