@@ -450,4 +450,12 @@ body::-webkit-scrollbar-thumb {
     padding: 3px 15px;
     box-shadow: 1px 2px 3px var(--background-highlight2);
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+.prof-level {
+    width: 12px;
+    height: auto;
 }
