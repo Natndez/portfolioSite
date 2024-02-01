@@ -301,7 +301,20 @@ body::-webkit-scrollbar-thumb {
 
 .project-cards {
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
+.project-cards .body-text {
+    font-size: 24px;
+}
+.project-cards:hover {
+    transform: scale(1.2);
+}
+.project-cards .body-text:hover {
+    font-size: 24px;
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
 
 .project-modal {
     /* Modal Positioning attributes */
