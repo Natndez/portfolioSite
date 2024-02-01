@@ -438,6 +438,7 @@ body::-webkit-scrollbar-thumb {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 .tech-items-container{
     display: flex;
@@ -461,4 +462,24 @@ body::-webkit-scrollbar-thumb {
 .prof-level {
     width: 18px;
     height: auto;
+}
+.content-key{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.key {
+    max-height: fit-content;
+    background-color: var(--background-color);
+    align-self: baseline;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    font-family: 'Kanit', Helvetica, sans-serif;
+    color: var(--text-color);
+}
+.key-content{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
