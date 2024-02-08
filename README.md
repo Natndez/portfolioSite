@@ -6,6 +6,10 @@ Learning Web Development has been an integral part of my current position as a W
 - English
 - Español
 
+#### Browsers Tested:
+- Firefox
+- Chrome
+- Safari
 
 #### Page Contents
 - Biography Section
