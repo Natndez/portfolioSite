@@ -250,7 +250,8 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap; /* Create a media query to adjust this on smaller screens */
-    gap: 16px;
+    gap: 32px;
+    padding: 12px;
 }
 .info-sections {
     flex-direction: column;
@@ -277,14 +278,14 @@ body::-webkit-scrollbar-thumb {
     transition: transform 0.3s ease;
 }
 .rotater:hover {
-    transform: scale(1.2) rotate(2deg);
+    transform: scale(1.1) rotate(2deg);
 }
 .rotatel {
     transition: transform 0.3s ease;
 }
 
 .rotatel:hover {
-    transform: scale(1.2) rotate(-2deg);
+    transform: scale(1.1) rotate(-2deg);
 }
 .sub-heading1 {
     color: var(--text-color);
@@ -309,7 +310,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 24px;
 }
 .project-cards:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .project-cards .body-text:hover {
     font-size: 24px;
