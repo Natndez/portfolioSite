@@ -399,7 +399,8 @@ body::-webkit-scrollbar-thumb {
     flex-wrap: wrap;
 }
 .grid-item {
-    width: calc(33.333% - 50px);
+    width: calc(33.33% - 10px);
+    max-width: 300px;
     height: auto;
     /* border: 2px solid var(--background-highlight); */
     background-color: var(--background-color);
