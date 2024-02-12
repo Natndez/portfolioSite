@@ -151,7 +151,7 @@ body::-webkit-scrollbar-thumb {
     line-height: 34px;
 }
 .media-links .link:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .media-links .link a {
     color: inherit;
