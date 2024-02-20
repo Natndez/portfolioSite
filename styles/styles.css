@@ -542,10 +542,48 @@ body::-webkit-scrollbar-thumb {
 
 .contact-info {
     width: calc(50% - 20px);
+    padding: 20px;
     /* border: 1px solid red; */
+}
+.form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
 }
 .signature {
     font-family: 'Kanit', Helvetica, sans-serif;
     margin: 0px;
     color: var(--accent-color);
+}
+
+.form-labels {
+    font-family: 'Kanit', Helvetica, sans-serif;
+    font-size: 16px;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.inputs {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 2px solid var(--background-highlight2);
+    border-radius: 4px;
+}
+
+.text-input {
+    background-color: var(--background-color);
+    width: 200px;
+    height: 50px;
+    max-width: 300px;
+    max-height: 150px;
+    color: var(--text-color);
+    border: 2px solid var(--background-highlight2);
+    border-radius: 4px;
+}
+
+.inputs:focus,.text-input:focus {
+    outline: 1px solid var(--accent-color);
 }
