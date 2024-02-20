@@ -255,18 +255,20 @@
                     </div>
                     <!-- TODO: STYLE FORM -->
                     <div class="contact-info">
-                        <div class="input">
-                            <label for="email">Email:</label><br>
-                            <input type="email" id="email" name="email"><br>
-                        </div>
-                        <div class="input">
-                            <label for="subject">Subject:</label><br>
-                            <input type="text" id="subject" name="subject">
-                        </div>
-                        <div class="input">
-                            <label for="description">Description:</label><br>
-                            <textarea id="description" name=description></textarea>
-                        </div>
+                        <form action="/submit-form" method="post">
+                            <div class="input">
+                                <label for="email">Email:</label><br>
+                                <input type="email" id="email" name="email"><br>
+                            </div>
+                            <div class="input">
+                                <label for="subject">Subject:</label><br>
+                                <input type="text" id="subject" name="subject">
+                            </div>
+                            <div class="input">
+                                <label for="description">Description:</label><br>
+                                <textarea id="description" name=description></textarea>
+                            </div>
+                    </form>
                     </div>
                 </div>
             </div>
