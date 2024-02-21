@@ -1,3 +1,5 @@
+/* TODO: MEDIA QUERIES FOR SMALLER SCREENS */
+
 :root {
     /* --background-color: #191d2b; */
     --background-color: rgb(25, 29, 43);
@@ -501,7 +503,6 @@ body::-webkit-scrollbar-thumb {
     gap: 12px;
 }
 
-/* TODO: STYLE THE CONTACT ME SECTION */
 .contact-section{
     display: flex;
     flex-direction: column;
@@ -543,13 +544,15 @@ body::-webkit-scrollbar-thumb {
 .contact-info {
     width: calc(50% - 20px);
     padding: 20px;
+    display: flex;
+    flex-direction: column;
     /* border: 1px solid red; */
 }
 .form-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
     height: 100%;
     width: 100%;
 }
@@ -562,7 +565,7 @@ body::-webkit-scrollbar-thumb {
 .form-labels {
     font-family: 'Kanit', Helvetica, sans-serif;
     font-size: 16px;
-    color: var(--accent-color);
+    color: var(--text-color);
     margin-bottom: 20px;
 }
 
@@ -575,15 +578,37 @@ body::-webkit-scrollbar-thumb {
 
 .text-input {
     background-color: var(--background-color);
-    width: 200px;
-    height: 50px;
+    width: 300px;
+    height: 100px;
     max-width: 300px;
-    max-height: 150px;
+    max-height: 100px;
     color: var(--text-color);
     border: 2px solid var(--background-highlight2);
     border-radius: 4px;
+    resize: none;
 }
 
 .inputs:focus,.text-input:focus {
     outline: 1px solid var(--accent-color);
+}
+
+.submit-button {
+    width: 50%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.submit-input {
+    height: 45px;
+    width: 70px;
+    background-color: var(--background-color);
+    border: 1px solid var(--background-highlight);
+    border-radius: 4px;
+    color: var(--text-color);   
+}
+.submit-input:hover {
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
